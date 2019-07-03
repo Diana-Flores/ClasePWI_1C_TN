@@ -1,0 +1,103 @@
+<html>
+    ><head>
+        <meta charset="utf-8">
+        <title>
+            Primera pagina con estilos
+        </title>
+        <!-- estilos que afecten a una serie de elementos, donde no tenemos
+             que modificar todo el timepo los elementos a los que querremos 
+             cambiarle estilos -->
+             <!-- esto le dice al navegador que dentro de las etiquetas se definen reglas d estilos -->
+             <style>
+                 /* la forma d comentar cambia eso sig que es otro lenguaje distinto :D */
+                 /* color: elive, tamaño de 22 pixeles, negrita */
+                 /* dentro de las llaves asignaremos los estilos que afectaran al elemento */
+                 p{ 
+                     color : olive; 
+                     /* px, cm, em, rem */
+                     /* color : olive; important lo toma igual como importante lo prioriza */
+                     font-size : 22px;
+                     /* peso de fuente */
+                     font-weight: bold;
+                     /* front-weight : 100/900
+                     600 700 */
+                     /* las condiciones normales de CSS es seguia por el orden en el que aparecen
+                     estilos tipo cascada--
+                      */
+                      /* font-family: tipos de letras */
+                      font-family: Verdana; 
+                      /* font-style: italic tec, que tan recta es la letra  */
+                      font-style: normal;
+                 } 
+                 /* todo lo que esta dentro de P, va afectar a todo lo que es parrafo,
+                  pero como el tomate y peru el color esta a lo ultimo lo toma eso y no el olive que dice dentro de style */
+                  /*  */
+                  h1{
+                     /* todos las h1 van a tener estos estilos */
+                      color : tomato;
+                      background: aquamarine;
+                      /* background: color de fondo que tendra el h1 */
+                      /*  width ancho */
+                      /* las medidas de ancho y alto se trabajen con procentajes */
+                      width: 50%;
+                  }
+                  .div1{
+                      /* punto adelante: referencia a la clase dv1 */
+                      background: aquamarine;
+                      color: white;
+                      width: 60%;
+                      /* alto del elem. : heigh */
+                      height: 250px;
+                  }
+                  .resaltar p{
+                      color: violeta;
+                      font-size: 10px;
+                      font-weight: 
+                  }
+             
+             </style>
+
+            
+    </head>
+
+    <body>
+        <!-- Le quiero dar al parrafo un color -->
+        <!-- color: (1er estilo de CSS)
+            background:
+            front-size: 
+
+        PROPIEDAD: VALOR QUE QUEREMOS DARLE -->
+        <!-- 3 formas de llamar a colores
+        : hezxadecimal
+         : rgb (rojo, verde, azul)
+         : rgba (rojo, verde, azul, opacidad)
+            : nombre de fantasia 
+ -->
+        <h1>Titulo horrible </h1>
+        <p style="color: tomato">Hola, tengo flow</p>
+        <p style="color: peru"> Soy un segundo parrafo con otro color</p>
+        <!--  div elemento de bloque no tine estilos definidos-->
+        <!-- claass, y id -->
+
+        <div class="div1">
+            <p> soy un parrafo dentro de un div.</p>
+        </div>
+
+        <div class="div1">
+            <h3> soy un h3 dentro de un div</h3>
+        </div>
+        <!-- clase
+        clase1
+    clase_uno
+
+-->     
+    <div class="div2">
+        <h3> soy un x dentro de un div</h3>
+    </div>
+
+    
+
+    </body>
+
+
+</html>

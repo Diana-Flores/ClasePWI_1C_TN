@@ -1,0 +1,134 @@
+
+
+
+<html>
+    <head>
+
+
+        <!-- 
+            MEDIANTE UN PROMPT EL USUARIO ingrese un valor recordar que lo que devuelve el prompt es TEXTO: parseInt();
+            Calcular la tabla (hasta z 20) del numero que ingresa el humano  
+         -->
+        
+        
+        <meta name="vi"
+        
+        <title>Document</title>
+
+    
+        <script> 
+        
+        // muchos registros en una tabla cualquiera. una tabla grande a un solo lugar -> digamos que la tabla tiene 8 filas, la infor puede variar
+        // la cant de lineas y columnas y filas, creamos bucles
+        // Bucles: while, for , do while, foreach 
+        // For -> se usa para recorrer una cantidad sucesiva de elementos. 
+        //          Tiene 3 argumentos-> For (inicio, fin, incremento/decremento)
+        var i;
+        // i++ -> la variable i en cada vuelta se incrementa en una unidad 
+        // i = i + 2 incrementa en dos unidades 
+        // i+=2
+        for( i=1, i<=10, i++ ){
+                document.write(i);
+                document.write("<br>"); 
+        }
+        document.write("Y cuando me toca a mi?"); 
+        // while -> 
+        //          Tiene argumentos -> 
+        // do while -> 
+        //          Tiene argumentos -> 
+        // foreach -> 
+        //          Tiene argumentos -> 
+        
+        
+        </script>
+        <script>
+            var usuario1 = "franco";
+            var password1 = "pasteles"; 
+
+            var usuario2 = "pwi_eslaonda";
+            var password2 = "pwi_eslaondapiola";
+            
+            var datousuario = prompt("Ingrese el usuario" , "ejemplo") ; 
+            var passwordusuario = prompt ("ingrese la contraseña", "*****");
+
+            //  si ingresa franco y la contraseña 
+            if(datousuario == "franco" && passwordusuario == "pasteles") || (datousuario == "pwi_eslaonda" && passwordusuario == "pwi_eslaondapiola")
+            { 
+                document.write("Bienvenido te extrañamos felices pascuas" +datousuario)
+            } else {
+                document.write("no tendras huevitos")
+            }
+
+           
+        
+        </script>
+            <script>
+                    
+                    // var valorHumano = parseInt(prompt("ingrese el valor")); 
+                    // for (var valorHumano=1, i<=20, i++){
+                        // document.write(valorHumano *i); 
+                        // document.write("<br"); 
+
+                    // }
+                    // Permitir al usuario ingresar 10 numeros por prompt 
+                    // a) cuantos nros positivos hay?
+                    // b) cuantos nros negativos hay?
+                    // c) cuantos son pares? 
+
+                    
+                    var nros_positivos;
+                    var nros_negativos;
+                    var nros_pares; 
+
+                    for(var i=1 ; i<=10; i++){
+
+
+                        var valor = parseInt(prompt("ingrese el valor")); 
+                        if(valor>0){
+                            nros_positivos++;   
+                        }                   
+                        else if(valor<0) {
+                            nros_negativos++;
+                        
+                         }
+                         if (valor % 2 == 0){
+                            nros_pares++; 
+                        }
+
+
+                    }
+                       
+                    document.write("Los numeros positivos son" + nros_positivos);
+                    document.write("Los numeros negativos son:" + nros_negativos);
+                    document.write("Los numeros pares son: " + nros_pares); 
+                    
+                     // onClick es un evento, busca a la plantilla de main.js la funcin que le pasemos
+                    // focus es cuando el puntero esta psicionado en ese momento actual
+                    // bloor es cuando dejo es focus
+                    <button type ="button" id="boton1" onclick="contador()"> Click me </button>
+                    <input type="text" id="texto1">
+                    <button type ="button" id="boton2" onclick="verificarTexto"> Click me </button>
+                        //  por que una etiqueta <button type ="button" por que solo quiero que me envie datos  
+
+                    
+                    <script src="main.js"></script>
+                
+                
+                </script>
+                </script>
+
+    </head>
+    <body>
+        <script>
+            mensaje();
+            mensaje(); 
+
+            sumar(6,3,4); 
+            
+            
+            
+            </script>
+        
+            
+    </body>
+</html>

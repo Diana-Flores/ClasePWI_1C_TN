@@ -1,0 +1,34 @@
+npm install
+para que tengamos los moedeulos y funque error
+
+dentro de peluqueria -> nodemon npm start
+abrir el xxamps y darle a apache, y mysql -> start 
+
+
+--------------
+crear sesion 
+1ro
+app.js
+var session = require("express-session");  -> variables globales/sesion/cookies -> tienen un tiempo de vida. 
+app.use(session({secret:"1234",cookies:
+{maxAge: null}, saveUninitualized: false, resave:false}));
+
+2do lo llamamos en login.js
+ req.session.usuario = rows[0].id_usuario;
+res.redirect("/panel"); 
+
+-----
+CREAMOS UNA NAVPAD:
+copy page de navapd de boostrap. en pnale.hbs
+
+
+en nav-link href="/login/logout">Logout<span 
+-despues vamos a login.js
+router.get("loguot", (res, req, next)=>{
+//destruir las sesiones del usuario
+req.sesion.destroy();
+//destriye todas las sesiones
+//req.sesion.destroy(req.session.carrito); 
+res.redirect("/login); 
+
+//npm js buscar ahi infor. de como usar lo demas 

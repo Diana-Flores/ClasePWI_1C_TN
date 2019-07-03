@@ -1,0 +1,102 @@
+CLASE 15-05-19
+
+Node Js. 
+
+es la parte banc end
+son aplicaciones en tiempo real aumentada. 
+
+podemos hacer palicaciones para escritorio. 
+
+NPM: note package manager (gestor de paqauetes) 
+librerias/Biclioteca:
+codigos(funciones, clases, todo)
+que escribioo alquien otro ser gumano del bien 
+
+reutilizar codigo de esas librerias, para escribir menos. 
+npm install mysql 
+
+npm install express-session: 
+
+npm install pdf yo puedo hacer pdf sin saber como funciona el pdf. 
+
+Puedo descargalo. 
+
+
+
+1ro
+
+npm install express -g 
+
+
+
+---express  es uina framewok de node js .. trae toda la paqueteria en modulos, 
+trae todos los modulos. 
+
+express es el conjunto de modulos que faclitan el desarrollo de la aplicacion web. 
+
+express-generator hae una programa ejectutaBLE en node js, que cuando s eejecuta crea una estrctura minima de una proyecto. 
+esto nos quiere decir que va hacer subcarpetas en ellas. (anterior) 
+
+
+
+express primer_proyecto_node --hbs -> esto me va crear una carpeta 
+
+
+
+
+//Forever
+npm install express -g
+npm install express-generator -g
+
+// esto de debe ejecutar cada ves que cree un proyecto nuevo 
+
+
+
+
+2paso
+
+express proyecto --hbs 
+cd proyecto 
+npm install 
+
+(este comando lee las dependencias del package.json e instala todos los modulos) 
+
+
+-----------------------------
+npm start : levanta nuestro web server 
+
+localhost:3000
+
+sirmpre que quereamos solicita un recurso utilizamos GET 
+que aggarra info de localhost:3000
+
+express nombre_carpeta --hbs 
+
+con -g hace instalar en el sist operativo no en una carpeta. la ventaja es que es global y lo puedo usar en cuaquier parte. 
+es
+
+
+
+
+
+
+
+protcolo://host:[puerto][/sldkcmlsdmclsdmclñsd,ñs  
+
+
+
+
+
+---------------------------
+
+
+npm install nodemon -g lo que haces es qe me actuliza mi infor. instala unporgrama que es nodemon que ejecutta constyanetment euna ytartea 
+
+tengo que estar dentro de la caprtea dl proyecto. 
+de ahora en mas uso : nodemon npm start 
+
+
+
+------------------
+de la parte de app.js envia info de la ruta que requiere, y app rutas es app.use va a buscar la ruta que le mande. 
+y este va a routes a buscar el archivo.js  

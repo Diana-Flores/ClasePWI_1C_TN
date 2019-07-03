@@ -1,0 +1,55 @@
+05-06-19
+
+RESUMEN NODE JS
+
+Para borrar un archivo, lo mejor es poner en un estado inactivo. el archivo. 
+
+Node js =! php
+node js -> trabaja lenguajes asincronicos. A medida que va ejecutando en  .No te permite trabajr con tanta concurrencia. 
+php -> trabaja en lenguaje sincronico. Necesita la salida del anterior, para tomarlo como entrada. 
+Mientras que con node js, (trabaja con promesas, donde quiere asemejarse a que node sea sincronico), y no necesita las salidas para seguir el codigo. 
+
+--------------------------------
+
+Rutas estaticas, si sabemos.
+Rutas dinamicas, aun no. 
+
+-------------
+App.js 
+
+Podemos cambiar el localhost:3000 -> localhost:3500 etc... 
+Node_modules -> se encuentran las clases, o las librerias. 
+Puclic-> es para la parte de hojas de estilo, y Javascrip apra la parte del clientes. 
+
+-----------------
+App.js 
+app.use("/", indexRouter); -> aca esta haciendo"brauser", cuando se encuentre en esta ruta "/" haga indexRouter. 
+app.use("/"), requiere("./routerindex)); -> yo necesito "routes/index". 
+
+--------------------
+Hoy: 
+
+Armamos una base de datos que vamos a llamar 
+tabla -> usuarios {
+	id_usuarios
+	usuarios
+	password
+	confirmado
+	estado
+	}
+
+Vamos a ingresar dos usuarios, y despues vamos a eliminarlo"poniendolo como en un estado inactivo". 
+
+
+
+En sql.
+
+USE PELUQUERIA;
+ALTER TABLE USUARIOS ADD COLUMN ESTADO VARCHAR (50); 
+
+---------------------
+
+Uno normalmente en node, podemos trabajar con clase. JAVA trabaja en orientado a eventos, y/objetos. 
+
+	
+

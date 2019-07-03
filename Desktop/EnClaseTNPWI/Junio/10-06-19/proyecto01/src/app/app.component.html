@@ -1,0 +1,43 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <div>
+    <h1> {{title}}</h1>
+      <h1> Bienvenido a la mejor app de todas : {{ nombre }} {{apellido}}</h1>
+      <h3>{{comprobrarEdad()}} </h3>
+      <h3 class="resaltar"></h3>
+
+      <!-- logicxa que se aplica en la vista a etiquetas -->
+      <!-- si el nombre d la persona es joagquin quiero que h4 diga ->se refiere a DIRECTIVAS: 
+      que van a empezar con un * -->
+
+      <h4  *ngIf="nombre=='joaquin'">Querido joaquin ud es un administrador muy gil</h4>
+      <h4 *ngIf="nombre!='joaquin'"> Menos mal que nos sos joaquin</h4>
+
+  </div>
+  <button type="button" (click) = "sumar_numerito()" class="btn btn-primary btn-outline">+1</button>
+
+  <!-- eventos -> evenlistening -->
+  <button type="button" (click) = "restar_numerito()" class="btn btn-primary btn-outline">-1</button>
+
+
+<select class="form-control" (change) ="option_select()" name="nombres">
+  <option> FRan</option>
+  <option> Co</option>
+
+
+
+</select>
+
+<h4>El contador tiene el valor de : {{contador}}</h4>
+
+<input type="text " [ngMode1]="nombre_usuario" name="nombre">
+<input type="text " [ngMode1]="apellido_usuario" name="apellido">
+<h4  *ngIf="nombre=='joaquin'">{{nombre_usuario}} {{apellido_usuario}} </h4>
+<!-- estoy interpolando -->
+
+
+<router-outlet></router-outlet>
+ 
+
+<!-- todo lo que es front, usamos como consola el navegador,
+lo que es back, lo vemos en la consola de node por ej   -->

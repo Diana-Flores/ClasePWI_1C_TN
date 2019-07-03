@@ -1,0 +1,50 @@
+/* TODAS LAS REGLAS Q SE APLICEN EN NUESTRO SITIO */
+/* NO HAY LIMITE DEFINIDO PARA LAS CANTIDAD DE HOJAS DE ESTILOS */
+
+.titulo{
+    background: #FFECBB;
+    height: 200px;
+    /* bordes 1px es el ancho, tipo de borde, color de borde*/
+    border: 5px dashed aquamarine;
+     /*que borde quiero modificar  */
+    /* border-top-style: solid */
+    /* border-top-widch: 1px */
+    /* border-top-color: tamaño */
+    /* top, right, boton, left */
+    /*  */
+
+}
+
+.titulo h1{
+    color: violet;
+    font-size: 45px;
+    text-align: center; 
+    /* text-decoration: underline; subrayado */
+    /* text-decoration: line-through; tachado */
+
+}
+.izquierda{
+    color: violet; 
+    /* textali nos permite mover ewl texto en horizontal */
+    text-align: left;
+    text-align: right;
+
+
+}
+
+.derecha{
+    color: white:
+    text-align: right;
+
+
+}
+.centrado{
+    color: darkslategray;
+    text-align: center;
+
+}
+.justificar{
+    /* justifica el texto */
+    text-align: justify;
+}
+

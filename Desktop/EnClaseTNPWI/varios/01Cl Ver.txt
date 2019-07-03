@@ -1,0 +1,121 @@
+4 paginas para el tp
+- mysql/mongo base de datos.
+- angular + nodejs + mysql/mongo
+front end como le mostramos al cliente.
+- tutorias: dileo.franco@gmail.com
+- que es slack? es un wpp, de nerds. es una canal de ej angular(?) inscribirse al link 
+pueden ir dudas y consultas, o si esdtamos llegando tarde. 
+- git/github / bitbucket: creamos copias de nuestro proyecto. OFFICE. es un con
+- github son repositorios todas las cosas de git lo puedo tener en github. 
+- git es local
+- github y bitbucket es online.
+- vamos a usar cmd 
+- Visual studio Code() : es un editor de codigo. 
+sublime text 3. 
+bracktes
+notepad
+dan facilidad visual. cambiar de tema -> File - preferences - color theme
+- downloand visual studio code y descargo. 
+- 
+- IP: direccioon logica que identifica a un equipo conectado a una red
+- DNS: sistema de nombres de dominios, por ej: tenemos que registrar nuestro sitio wed: como tinder. etc. Quien lo autoriza AFIP. 
+- En nic.ar podemos conocer nuestro propio url. nic.ar -> clave fiscal
+- si queremos registrar tenemos que hacer // .com -> no tienen inconvenientes. Para esto debes tener clave fiscal. 
+- Servidor: la comp. de otra persona. 
+- la nube -> la comp. de otra persona.
+- Aqui en el curso uisamos 000webhost -> gratuito
+EL RESTO SE PAGA: 
+donweb -> 700
+goDaddy - > server web
+AWS -> Amazon web service IoT
+
+RESUMEN: subimos las cosas a un servidor, que a la vez tiene un IP, y este IP tiene DNS y eso es lo que ve el cliente.   //El nombre que le ponemos a ese IP, y en el servidor subimos nuestro 
+Puerto: ahi muchos, el puerto es un canal de escucha (entra y salga infor.) entre el servidor y el cliente. 
+EJ: 80 wwww.pagina.com.ar:80 Por defecto HTTP MANEJA EL PUERTO 80
+Vamos a manejar el puerto 
+1) 21 FTP file transfer protocol 
+(subir archivo al server)
+2) (80)
+3) (443 SSL) conexiones seguras.. si quiero realizar una pag web donde pagen debo asegurarme q este segura
+4) 25 -> smtp (envio de mails). 
+---------------------------------------------------------------------------------------------------------------------
+
+HTML
+LOS COMENTARIOS  se escriben en <!-- texto informastivo --> CRTL + llave cierre-```}}} comentario automaticos con escribir X y despues control y llave de cierre
+
+tenemos la cabeza de HTML,  HEAD.... el cuerpo es Booy, y el final Footer. y el ambiente donde se maneja es la HTML. 
+
+En head son cosas que no se ven como codificacion de lenguaje, como keywords, auitores del sitio. 
+
+Cada parrafo que genero genera una caja: 
+BARRA DE NAVEGACION ES NAVBAR
+Todo elemento de HTML genera cajas. tODOS LOS ERRORES QUE TENGAMOS VAN A APARECER EN INSPECCIONAR CRTL SHIFT
+- href ="   " a donde voy a llevar a la persona. 
+
+si queremos que lleve el vinculo a otra pagina es con href.
+
+si queremos que nos deje en lamisma pagina como target 
+
+---------
+si tengo un html dentro de la carpeta pepito o partials". por ej NAV.html
+ej: <a href="../partials/nav.html"
+
+si tengo que qentrar a index entro asi:
+<a href "partials/contacto.html"
+
+--
+vimos
+<p> </p> para parrafos
+<a> </a> para enlaces
+>img src="" alt="">para imagenes 
+
+strong para resaltar palarbas
+<meta charset="utf-8"> codificaion lationamericana
+
+se hace asi
+<html> 
+<head>meta</head>
+<body> </body>
+</html>
+iframes es un elem. de una pagina xxxxxx
+iframes -> Mapa, comentario de fb, video de youtube. son insertos de una pag dentro de la nuestra. Se intenta hacer uan referencia a nuestra pagina. 
+
+se hace asi:
+link: https://www.google.com/maps
+-- vas a google maps bsucar una dirrec, y en la parte de compartir me tira dos opciones y seleecionamos incorporar un maps. y nos sale una etyiketa iframe" copiamos el enlace entero y lo copias en el visual
+tal cual, 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

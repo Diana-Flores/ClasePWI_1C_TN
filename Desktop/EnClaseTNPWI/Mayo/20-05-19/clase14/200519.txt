@@ -1,0 +1,204 @@
+npm install esxpress -g
+npm install express-generator -g
+espress nombreCArpeta --hbs
+
+viers/. handlebars
+
+1ro.bucamos node js command prompt 
+2do. 
+C:\Users\Diseño multimedial> cd Desktop
+3ro. 
+C:\Users\Diseño multimedial\Desktop>express clase14 --hbs
+4to. 
+C:\Users\Diseño multimedial\Desktop>cd clase14
+5to. 
+C:\Users\Diseño multimedial\Desktop\clase14>npm install
+
+npm es un repositoprio de paquetes. que nos descarga los modulos a nuestra carperta. 
+
+Ahoa instalamos dos encripotados de sql. dos modulos md5
+
+6to.
+C:\Users\Diseño multimedial\Desktop\clase14>npm install md5 --save
+7to. 
+C:\Users\Diseño multimedial\Desktop\clase14>npm install uuid
+
+
+
+
+npm install md5 --save
+npm install uuid -> genera un nombre unico para guardar los archivos que se generen. 
+
+
+Hay 4 rutas 
+APP, declaramos la ruta final a la queremos accder
+ROUTES, donde guardamos la 
+VIEWS, 
+
+tarea:
+Queremos crear un login en APP. js en dos partes, se modificaba en -> que archivo procesaba esa ruta -> cual era esa ruta y que achivo ejecutaba. Login.js dentro de la carpeta routes. 
+APP.js
+suponemos que creamos ya esta: http://localhost:3000/login
+-> var login = requiere( login). 
+-> app.use("/login", login) 
+Entonces, vamos a crear login.js en ROUTES. dos veces y crear carpeta login.js 
+var express = requiere ("express");
+var router =express.Router();
+module.exports = router ; 
+
+//get, post, put, delete
+
+//es el framword express -> express.Router(); 
+
+acceso solo a barra login
+router.get("/", functioon (req, res, next){
+
+//res.render("login"); -> renderizamos la vista login
+res.render("login", {title:"bienvenido"`); 
+
+}) 
+
+accedo a login/usuario
+
+router. get("/usuario", function(resres, next){
+
+}) 
+
+
+Despues, vamos a views. 
+carpeta viwes clik derecho new file, login.hbs
+
+vamnos a bostrap, en laybus.hbs esta nuestro html head y esas cosas weas. 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+despues va a link rel.css
+
+en login.hbs pongo
+<div class="ontainer">
+
+<div class ="row">
+>div class = "col">
+>h1 class="text-center"> {{title}} </h1>
+</div>
+</div>
+</div>
+
+
+
+despues vamos a la consola, pongo 
+nodemon npm start 
+
+levanta constastemente el servidor para no ejecutar un cambioo en nuestor programa. 
+
+
+
+login.hbs
+<div class="row">
+
+
+--la infor que cree en el host va ir en login , dentro usuario 
+<form method="post" action=""/login/usuario">
+<input name="usuario" type ="text"
+class ="form-control"
+placeholder="usuario">
+
+<input name=""password" type="password"
+class= "form-control mt-4" 
+placeholder= "*****">
+
+<button type="submit" class="btn-btn-primary"> Ingrese</button> 
+
+
+
+el action me decia a que ruta iba direcionar eso//
+
+
+
+login.js 
+con post envio el formulario que creamos en html -> <form method="post" action=""/login/usuario">
+
+router.post("/usuario", funcion(req, res, next){
+//toda la infor. del formuialrio llega aca. 
+console.log(req); 
+var usuario =req.body.usuario; -> este el el name del input <input name="usuario" type ="text"
+class ="form-control"
+placeholder="usuario">
+
+var password = req.body.password; 
+
+req, es la infor q me llega es un objeto
+y res, es la respuesta que 
+body, es un arrayu del objeto
+y suaurio y pasword. son las propiuedades que nos pasan. 
+
+if(usuario =="franco" && pasword=="1234"){
+--res.render("panel"); 
+--render -> me muiestra vistas, 
+var informacion = {
+curso : "pwi_tn",
+dias : "lu-mi",
+alumnos: [
+{nombre: "franco", edad:25, foto:"1.png"}. {nombre: "cali", edad:25, foto:"2.png"}
+
+}
+
+res.render("panel", informacion); 
+})
+
+req
+body
+usuario 
+pasword 
+
+PASO 2: 
+generamos el punto panel. en views. si solo quremos crear una vista, creamos el panel en views, y est eno tendra rutas si no lo creamos dentro de la routes. 
+
+
+vamos a viwes. creamos panel.hbs 
+
+solo lo creamos para mostrar 
+
+
+
+
+
+
+REPASO.
+
+
+APP.JS 
+-> VAR
+-> RUTA
+
+EN ROUTES
+.GET 
+
+.POST
+-> respondemos con res 
+
+
+.VIWES. vistas es lo ultimo. 
+
+
+-----------
+volvemos a panel.hbs 
+
+agreggo 
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="..." alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+
+
+
+--------------------
+https://www.google.com/search?q=avatar+w3+school&hl=es-419&authuser=0&rlz=1C1SQJL_esAR782AR782&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiGvoirp6viAhW-H7kGHTHKCEYQ_AUIDigB&biw=1600&bih=789
+
+
+
+

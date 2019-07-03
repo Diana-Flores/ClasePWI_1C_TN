@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- JSON: Javascript objetc notation
+    sillat piton, se conmican con esto, -> objetos literales -->
+    <!-- podemos mandar cualquier tipo de estucturas 
+    ej:
+var dato = ["nombre", 31333]
+podemos mandar cualquier tipo de dato
+ -->
+<script>
+ var cursos = {
+     nombre : "programador web inicial", 
+     horario: 19,
+     temas : [
+        " html","css","boostrap","mysql"
+     ],
+     alumnos: [ 
+         {nombre: "calixto", edad:25, conocimientos:false},
+         {nombre: "martin", edad: 26, conocimientos: true}  //es un objeto cada posicion del array de alumnos 
+     ]
+
+ }
+ document.write(curso.nombre); 
+ document.write(curso.temas[0]); 
+ document.write(curso.alumnos[1].edad); 
+//  <!-- var cursos solo tiene datos etc..  -->
+// <!-- diferencia entre objetos y objetos literales es: 
+// document es un objeto
+// elementById es un metodo -->
+
+
+</script>
+</body>
+</html>

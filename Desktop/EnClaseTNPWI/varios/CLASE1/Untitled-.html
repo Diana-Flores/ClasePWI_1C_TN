@@ -1,0 +1,92 @@
+<!--  -->
+<html>
+    <head>
+            <title> Formularios</title>
+            <meta charset="uft-8">
+    </head>
+    <body>
+        <h1> Titulos </h1>
+        <a href="https://www.google.es/" target=new()>
+            Enlace a google
+        </a> 
+        <!-- son elementos para que el usuario ingrese informacion
+        a su ves con esa infor. 
+        vamos a hacer peticiones aun conjunto de tabvlas dentro de una base de datos -->
+        <!-- por ej: cuando se quiere loguar un usuario y ya existe, y va buscar 
+        a la base de datos la parte backend a ver si esta logueado o no y si lo esta lo responde que ya existe
+     -->
+     <form>
+         <!-- el usuario ingrese informacion  -->
+         <!-- este input esta pensando para poner  caracteres alfanumericos -->
+         <!-- label muestra el texto dentro de su etiqueta y el aributo for sirve para aumentar 
+            la expericencia del usuario : usadopara gente qu no puede ver,
+             El programa que usan lee lo que esta adentro de for="-" -->
+         <label for="ingresa tu usuario"> Ingresa tu usuario</label>
+         <p> Usuario</p>
+         <input type="text" placeholder="example@example.com"> 
+         <!-- en la parte de placeholder se refiere a un ejemplo () 
+            es un atributo de la etiwueta input que guia al usuario respecto a que informacion se espera dentro del control  -->
+         <p>Correo Electronico:</p>
+        <!-- type: email verifica que haya un @ y un .com dentro de lo escrito -->
+
+        <!-- value: valor asociado a ese control  -->
+        <!-- cuando ya complete todo y quiero editar el nombre una letra uso value (chupa infor. de la base de datos y lo muestra en las "opciones") placeholder: es una sugerencia  -->
+        <input type="text" name="usuario"> 
+        <!-- el usuario de arriba sirve como un nombre de la caja(maquetacion) para identificar toda la caja que se le va enviar al Backend -->
+         <p>Nombre</p>
+         <input type="text" name="nombre_usuario">
+         <input type="email" name="usuario">
+         <p> Ingrese tu contraseña</p>
+         <input type="password" name="usuario"> 
+        <p>Repetir contraseña</p>
+        <input type= "password" name="usuario">
+        <p>Ingresa la foto mas fea que tengas</p>
+        <input type="file" name= "usuario">
+        <!-- textarea: nos genera un espacio amplio donde escribir (cuadro de texto) -->
+          <!-- tiene etiketa de cierre con br se va al costado abajo el textarea-->
+        <br>
+        <textarea rows= "10" cols="50">
+          Escribi un comentario 
+
+        </textarea>
+        <p>Elegi un color: </p>
+        <!-- input para elegir un color cualquiera -->
+        <input type="color">
+        <br>
+        <!-- calendario para elegir una fecha determinada -->
+        <p>Fecha de Nacimiento: </p>
+        <input type="date">
+        <br>
+        <p>Selecciona un pais</p>
+        <!-- select -->
+        <select>
+            <!-- todas las opciones a mostrar -->
+                <option
+                value="argentina">Argentina</option>
+                <option
+                value="uruguay">Uruguay</option>
+                <option
+                value="china">China</option>
+                <!-- la infor va al servidor -->
+
+        </select>
+        <select name="sexo">
+            <option value="0">Femenino</option>
+            <option value="1">MAsculino</option>
+            <option value="2">Otros</option>
+            <option value="3">Prefiero no indicarlo</option>
+        </select>
+         <!-- usuario, 
+            mail,
+            contraseña, 
+            repetir contraseña, 
+            foto de perfil, 
+             descipcion personal, 
+             edad  -->
+         <br><br>
+         <!-- br*10 y presiona tab(te lo hace por 10veces br) -->
+        <button type="button">Registrarme</button>
+     </form>
+    </body>
+
+</html>

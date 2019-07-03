@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+        <h3>{{curso}} {{dias}}</h3>
+    {{each alumnos}}
+    <div class="cool-4">
+    <div class="card mt-5" style="">
+  <img class="card-img-top" src="/images/{{foto}}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text"> 
+        <a href ="/personas/{{nombre}}/{{edad}}{{foto}}">{{nombre}}</a>
+        
+         {{edad}}
+        
+        
+        </p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+  </div>
+</div>
+    </div>
+
+</div>
+
+
+{{!-- PODEMOS IR A HANDLBARS 
+
+{{"#each", alumnos}} se va meter dentro de el vector alumnos, --}}

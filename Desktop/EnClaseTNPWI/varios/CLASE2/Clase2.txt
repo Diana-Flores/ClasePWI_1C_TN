@@ -1,0 +1,69 @@
+CSS es el mecanismo que permite separar los contenidos definidos mediante XHTML, seria mas de:
+ Base (Contenidos+presentacion) -> XHTML(contenidos) CSS(presentacion). 
+Ventaja de separar ambos: es q los doc. creados son mas flexibles, ya que se adaptan mejor a dif. plataformas, pantallas de ordenador, pantallas de dispositivos móviles, impresoras y dispositivos utilizados por personas discapacitadas.
+De esta forma, utilizando exclusivamente XHTML se crean páginas web "feas" pero correctas. AplicandoCSS, se pueden crear páginas"bonitas"a partir de las páginasXHTMLcorrectas.
+.
+
+Cap2: leng. de etiquetas: al principio los arch. de textos sin formato se codificaban las letras del alfabeto y se trans. en num. 
+------------
+git es un sistema de control de versiones. para seguir nuestro proyecto dia a dias, creamos ramas. descargamos el punto exe.
+github es una version online. para descargar de ahi archivos. 
+gitbucket, podemos hacer repositorios privados. 
+siempre se usa mas GitBash. 
+---------------
+en new, PV-RPueba.creamos un nuevo repositoio. en la descrpicon: entorno de pruebas para el curso de web inicial, ahi q poner publico, y lo creamos. y se crea el primer repo. 
+el repsoitorio es: https://github.com/dileofrancoj/PWI_1C_TN
+
+Clonar: git (herramienta para descargar)
+commits -> comentar, ej: modifique el login y cree variables de sesion. el commits es el ultimo paso. 
+
+En Git, ahi 3 pasos fundamentales, 1! agregar el archivo al repsoitorio 2) hacer un commit de el/ los archivos(git commit) 3) subirlo a la nube.
+eso hacemos en la version local de git, y github es la nube. 
+
+En gitBash: 
+en la consola, nos permite movernos dentro del sistema operativo. 
+tiene 3 comandos principales: 
+ls -> muestra todos los archivos del directorio en el que estoy. ls viene de list.
+por cuestiones de comodidad trabajo en Desktop. Lo que quioero es clonar y bajarlo a mi carpeta de Desktop. 
+cd -> change directory. 
+cd Destkop para moverme al escritorio. primero
+ls segundo
+git clone agarra de la nube el repositorio para bajarlo. 
+y tiene que ir git clone "URL Github"
+----------
+Backend. la vista del usuario que ve la formularios, y atraviesa Backend, para llegar a la codificacion. 
+Para un registro, necesitamos:
+Foto de perfil
+---
+CSS hoja de estilos, es parecido de Bostrap. 
+
+Dentro de form estan todos esos input controles y areas, siempre tienen q estar demtro de Form. 
+------------
+
+la etiqueta <a href="" target=
+-----------
+name="" atributo que identifica el nombre con el que la informacion que escriba el usuario llegara el servidor. 
+id"" -> identificacion unica del elemento. 
+
+--------
+class="" -> CSS
+
+Es una clase de estilos. la clase es un atributo. ej class="texto". es para agrupar estilos, fuenets color, elemen. 
+
+class de name solo se afecta"" a texto. 
+Los demas esta ok. 
+
+EJERCICIO: 
+DOS PAGINAS HTML
+1. FORMILARIO DE LOGIN (USUARIO, PASSWORD)
+BOTON: INGRESAR
+eNLACE: A LA PAGINA DE REGISTRO
+(HIPERVINCULO) REGISTRO.HTML
+
+2. (REGISTRO-HTML)uSUARIO, CONTRASEÑA, CORREO, CUMLEAÑOS. 
+HIPERVINCULO_ VOLVER (LOGIN.HTML)
+BOTON: REGISTRARSE. 
+
+
+vber tablas de html, es una forma de mostrar informaciuon. 
+

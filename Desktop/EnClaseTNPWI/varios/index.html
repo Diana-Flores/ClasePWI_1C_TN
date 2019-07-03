@@ -1,0 +1,82 @@
+<!-- HOY VEMOS BOOSTRAP: ES UN FRAMEWORK DE CSS (2000 lineas de css) -->
+<!-- ES MAQUETACION CON FLEXBOX -->
+<!-- Tiene una comunidad muy copada donde podes: 
+    consultar, 
+    es de codigo abierto: si nos pinte podemos modificar cosas. 
+    mantenimiento del codigo -->
+
+<html>
+    <head>
+        <!-- local(no perdemos los datos) : online (recomiendo online, no se te va caer, 
+            todo el codigo de css esta en cache -> mejora el tiempo de carga del sitio -->
+            <!-- los estilos se cargan dentro del head, como boostrap tambien son estilos se cargan en el mismo -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            <!-- min viene de minificado no genera espacio para que el archivo pese menos en el servi  -->
+            <!-- boostrap.css es una version mas https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.css -->
+            <!-- CDM es un archivo dentro de la computadora de otra persona -->
+
+    </head>
+    <body>
+        <!-- container-fluid= caja de ocupa todo el ancho del contenedor -->
+        <!-- container  genera un caja de witdh : 80% centrada -->
+        <div class="container-fluid">
+            <!-- container =  genera un contenedor con margen a los costados y cambie la tipografia de lo que en el contenedor -->
+            <h1>1 , 2 , 3, probando Bootstrap</h1>
+            <!-- generamos el sistema de grillas -->
+            <!-- boostrap genera 12 columnas dentro de una fila, CADA VEZ QUE QUIERA HACER UNA FILA TENGO QUE HAVERLO DENTOR DE COLIMNAS-->
+
+            <!-- creamos una fila -->
+            <!-- row es una clase -->
+            <!-- si divido mi caja en 2, cada caja dentro de la fila debe tener como max 6 columnas internas para que sumadas me dan 12 columnas -->
+            <div class="row">
+
+                <div class="col-xl-6">
+                    <h2>Primer columna de mi fila</h2>
+                </div>
+                <div class="col-xl-6">
+                    <h2>Segunda columna de mi fila</h2>
+                </div>
+
+                <!-- .col-lg-4*3  (+tabular)  eso me genera 3 filas de codigo -->
+                <!-- < apreto control y escribo seleccionando previamente a las flechitas finales de div por ej -->
+
+
+
+            </div> 
+            <!-- hasta ahi tengo mis columnas que son dos -->
+            <!-- xl es de 1200% -->
+            <!-- 6 es... dos filas de 6 = 12  -->
+
+            <div class"row">
+
+                <!-- lg colapsa : a 942px  -->
+
+                <div class="col-lg-4">Primer linea de codigo</div>
+                <div class="col-lg-4">Segunda linea de codigo</div>
+                <div class="col-lg-4">Tercer linea de codigo</div>
+                <!-- si me sale este ultimo div debajo cada una del anterior div es por la 
+                    resolucion d emi monitor, si es menor de 1200 pasa eso -->
+            </div>
+
+            <div class="row">
+                <!-- md colapsa : e smenor a 720px -->
+                <!-- sm colapsa : cuando es menor a 540px  -->
+                <!-- 
+                    Multiples reglas, para generalizar en ves de ser tan especifico con que md sm........ deficniendion: 
+                    sis e cumplen los estilos si la resolucion del navegador 
+                 -->
+                 <!-- Ej: quiero que tenga la pantalla de mi monitor 10 2 (xl), 8 4(l), 7 5 (min), 6 6 (sm) ... estaria usando dos div para todos estos-->
+
+            </div>
+
+            <div class="col-xl-10 col-lg-8 col-md-7 col-sm-6">
+
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-5 col-sm-6">
+
+            </div>
+        </div>
+        
+    </body>
+</html>

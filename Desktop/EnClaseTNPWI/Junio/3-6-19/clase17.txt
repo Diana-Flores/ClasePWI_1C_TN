@@ -1,0 +1,84 @@
+express calse17 --hbs
+
+cd no
+
+npm install 
+
+npm install mysql -Z base de datos
+npm install uuid -> ids
+npm install md5 -> password 
+
+npm install nodemailer --save -> 
+npm intall multer --save -> contenido multimedia 
+
+
+
+app.js
+var upload =  requiere.(
+
+app.use(/upload, upload) ; 
+
+
+routas. 
+((deifninimos rutas en app
+definimos funcion en tooats 
+vistas
+
+var express = requiere("express")
+var multer = require("multer");
+var upload =  multer({dest : "./subidas/"}); los arcihvos temproales que 
+
+
+//swubimos un arcihoo al servidos esciosten dos pasos en el medio:
+1 se crea un archivo temporal
+2 mover ese archivo temporal a una capreta donde tengamos los archivos multimedias 
+3 borramos el archivo temproal 
+
+
+router.get(/, (req, res, next)=>{
+res.render("upload", {title: "subir imagenes"}); 
+
+//renderizamos es lo que sale 
+
+//localhost::300/upload/new 
+router.post("/new",upload.array("foto",1), (res, req, next)=>{
+
+
+}); 
+	
+module.exports = router; 
+
+
+
+
+viewes
+
+//cuando subimos un file siempre tiene que ser method= POST, tambien tenemos que agregar enctype="multipart/form-data"
+<form method="post" action=""/upload/new" enctype="multipart/form-data">
+	<input type="file" name="foto>
+	<button type="submit">Subir Foto</button>
+	
+
+</form>
+
+
+app.js
+
+
+
+con rs-> en node js consola, puedo reiniciarlo, y toma los cambios realizados. 
+
+y con nodemon npm start -> activo el proyecto "clase17" para poder consultarlo en el navegador 
+
+
+
+
+
+------------------
+fs delete file 
+
+
+seguridad google - < buscador como mofificar el acceso de a la cuenta de apps menos seguras, buscar en google. 
+
+añadir fot de perdil en google, despues seguridad, -> en el candadito-> activar acceso. 
+

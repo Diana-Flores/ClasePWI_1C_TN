@@ -1,0 +1,27 @@
+<h1> Panel de usuarios </h1>
+{{!-- quiero ver en que formato me trae la infor. de sql  --}}
+<table>
+
+    <tr>
+        <td> ID</td>
+        <td> Usuario</td>
+        <td> Password</td>
+        <td> Mail confirmado</td>
+        {{!-- siempre para un each que queremos repetir, iteramos  --}}
+
+
+    </tr>
+
+    {{#each dato}}
+    <tr>
+        <td> {{id_usuario}} </td>
+        <td> {{usuario}} </td>
+        <td> {{password}} </td>
+        <td> {{confirmado}} </td>
+
+
+    </tr>
+    {{/each}}
+
+
+</table>

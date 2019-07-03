@@ -1,0 +1,6 @@
+Visual Studio Code
+Sublime text 3
+Navegador a elección
+Apache (se verá mas adelante)
+GIT (https://git-scm.com/downloads)
+Node JS (se verá mas adelante)

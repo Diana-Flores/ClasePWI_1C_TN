@@ -1,0 +1,46 @@
+La conexion de node y angular, se hacen a traves de servicios. 
+
+---
+Los formualrios en angular, tiene 3 partes
+
+form-Group : con todos los inputs
+-> 
+
+Toda la informacion de registro.html va ir a registro.ts tengo que declararlo asi. 
+
+en Node mpn
+ cd desktop a la carpeta
+carrito angular 
+
+
+dentro de registrasr_usuario()  va estar en registro.ts 
+
+//components.ts -->servicio-->servidor. 
+
+en .ts esta el formularioo. y se enviamos a node para que este se lo de a la bd. Y en node, el Xammp activo apache y mysql, en local.host:3000/phpMyAdmin
+Una ves que cree la tavla en mysql, creo en registro.js de node, 
+creamos una objeto var obj: usuario: req.body.usuario;
+password: md5(req.body.passowrd); -> yo se que el password va estar incriptados. en este registro.js inciializas el md5 y bd, Luego
+tenemos que hacer bd.query(..........) con req.status(200).send({id: 1}); es par auq enos diga si se envio todo bien. Entonces en registro.componene.ts debo devolver tomando el 1, y mostarrle al usuario que si esta tpodo bien a traves de una string. 
+
+						
+setvicvios es el contorlador entre el servicio 
+
+
+
+
+
+-------------
+
+Repo Git
+front bakc
+(tablas) Entrega Final 1/08 
+
+Librerias Front: bootstrap
+Lib¿rerias Front: material desing Angular. 
+
+
+router.pos(sss){
+ bd.query.ddsdsddddd
+
+})

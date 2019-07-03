@@ -1,0 +1,38 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+    <FORM>
+        <label for="correo"></label>
+        <input type="email">
+        <button typer="button">Registrarse</button>
+
+        <!-- AJAX, 
+            CLICK, DOBLECLICK, BLUR, FOCUS, HOVER, 
+            ANGULAR -->
+            <!-- ENVIO INFROMACION AL BACKEND -->
+        <button type="submit">Enviar informacion</button>
+        <button type="reset">Borrar todo :)</button>
+    </FORM>
+    <br>
+    <br>
+    <br>
+    <form action="" method="">
+        <!-- Quien procesa esta infor?
+            action: pagina o archivo o rita a la que se enviara la informacion de nuestro form -->
+        <label for="nombre">Ingrese tu nombre</label>
+        <!-- required es un atributo propio de forms en gral que 
+            dice que verifica que no este vacio el input que tiene 
+            required dentro  -->
+            <!-- method: GET enviar infor. a traves de la url(nos conviene cuando es un buscador(en google)) ES CONSULTAR INFORMACION
+                method: POST envio de infor. de forma interna em el navegador(registrarme como usuario por ej, uso post es decir agregar infor.)
+                method: PUT(actualizar informacion de una tabla), DELETE (borrar infor. de una tabal)-
+                verbos HTTP            
+            -->
+        <input type="text" required name="nombre">
+        <button type="submit">Registrar</button>
+    </form>
+  
+    </body>
+</html>

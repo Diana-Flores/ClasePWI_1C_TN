@@ -1,0 +1,47 @@
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Document</title>
+
+
+    </head>
+
+    <body>
+        <span id="relojito">0</span>
+        <script>
+            // cuando se carga el documento se dispara la funcoon cargar 
+            addEventListener("load", cargar);
+            var relojito = 0; 
+
+            function cargar () {
+                // setInterval es una funcion de JS que cada cierto periodo de tiempo dispara una funcion 
+                // elprimer parametro es la funcion a ejecutrar, y la segunda funcion cada cuanto timepo en este caso opera en segundos esta en miliseundo
+
+                setInterval(contador,1000); 
+
+                function contador(){
+                    // window.location.href = "google" -> VER 
+                    var numerito = parseInt(document.getElementById("relojito").innerHTML); //por primera ves esta en cero. 
+                    numerito++; // esto me hace seguir contando. 
+                    document.getElementById("relojito").innerHTML = numerito; 
+                    // var numerito = document.getElementById("relojito").innerHTML;  con esto me guardo el valor que tome relojito dentro de numerito, este valor es variable segundo a segundo. 
+                    // var numerito = document.getElementById("relojito").innerHTML = 2; con esto siempre va ser 2. y nunca mas. 
+                    // como se que dentro de span me pueden pasar cualquier cosa, pongo un parseInt() para que me obligue a que sea un numerito. 
+                    // que valor inicial tiene mi span-> tiene cero  en este momento 
+
+
+
+                }
+
+            }
+
+        
+        
+        
+        </script>
+        
+    </body>
+
+</html>

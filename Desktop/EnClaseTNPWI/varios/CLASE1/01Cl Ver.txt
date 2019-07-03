@@ -1,0 +1,41 @@
+4 paginas para el tp
+- mysql/mongo base de datos.
+- angular + nodejs + mysql/mongo
+front end como le mostramos al cliente.
+- tutorias: dileo.franco@gmail.com
+- que es slack? es un wpp, de nerds. es una canal de ej angular(?) inscribirse al link 
+pueden ir dudas y consultas, o si esdtamos llegando tarde. 
+- git/github / bitbucket: creamos copias de nuestro proyecto. OFFICE. es un con
+- github son repositorios todas las cosas de git lo puedo tener en github. 
+- git es local
+- github y bitbucket es online.
+- vamos a usar cmd 
+- Visual studio Code() : es un editor de codigo. 
+sublime text 3. 
+bracktes
+notepad
+dan facilidad visual. cambiar de tema -> File - preferences - color theme
+- downloand visual studio code y descargo. 
+- 
+- IP: direccioon logica que identifica a un equipo conectado a una red
+- DNS: sistema de nombres de dominios, por ej: tenemos que registrar nuestro sitio wed: como tinder. etc. Quien lo autoriza AFIP. 
+- En nic.ar podemos conocer nuestro propio url. nic.ar -> clave fiscal
+- si queremos registrar tenemos que hacer // .com -> no tienen inconvenientes. Para esto debes tener clave fiscal. 
+- Servidor: la comp. de otra persona. 
+- la nube -> la comp. de otra persona.
+- Aqui en el curso uisamos 000webhost -> gratuito
+EL RESTO SE PAGA: 
+donweb -> 700
+goDaddy - > server web
+AWS -> Amazon web service IoT
+
+RESUMEN: subimos las cosas a un servidor, que a la vez tiene un IP, y este IP tiene DNS y eso es lo que ve el cliente.   //El nombre que le ponemos a ese IP, y en el servidor subimos nuestro 
+Puerto: ahi muchos, el puerto es un canal de escucha (entra y salga infor.) entre el servidor y el cliente. 
+EJ: 80 wwww.pagina.com.ar:80 Por defecto HTTP MANEJA EL PUERTO 80
+Vamos a manejar el puerto 
+1) 21 FTP file transfer protocol 
+(subir archivo al server)
+2) (80)
+3) (443 SSL) conexiones seguras.. si quiero realizar una pag web donde pagen debo asegurarme q este segura
+4) 25 -> smtp (envio de mails). 
+---------------------------------------------------------------------------------------------------------------------

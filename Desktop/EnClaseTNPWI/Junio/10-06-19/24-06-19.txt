@@ -1,0 +1,41 @@
+sericio
+-> comunicarse a node
+-> conenxion a la bd
+-> 
+
+Archivo ->  funciones para que las componentes
+accedan a el -> firebase, informacion estatica, dinamica, etc. 
+
+Sesiones de Node -> es para aplicaciones chicas como: fb.
+
+SERVER1 | SERVER2 | SERVER3 |
+
+las variables de sesion: local al servidor. 
+
+TEMP/1.tmp 
+
+JWT | CAMPO EN UNA TABLA al estar la base datos en forma online.  RDS
+			USUARIO1
+
+INICIO - PAYLOAD - FIRMA 
+
+----------------
+Node:
+express backend --hbs
+
+---------------
+NodeJS -> consultas y validaciones a la base de adtos. 
+
+Angular.> 
+front .> servicio .> Back
+                  <- 
+
+
+
+
+
+---------------
+SPA (
+
+el servicio se declara en provaires, y en.---
+

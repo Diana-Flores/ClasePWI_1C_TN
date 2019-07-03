@@ -1,0 +1,273 @@
+
+10-06-19
+
+ANGULAR JS 
+no1. npm install express 
+
+1. npm install -g @angular/cli 
+2. 
+
+vistas de node 
+.html
+
+Angular 1.x | Js 
+
+
+
+Angular 2...8
+typescript : tipado 
+ var edad = false;
+var nombre =  "franco"; 
+
+nombre : "string" = "Franco"
+nacimiento : Date;
+lenguajes : any  [ ]
+
+En Angular dentro de una clase, vamos a ver objetos 
+
+Clase ..{
+
+edad : number;
+nombre : string; 
+
+function verificarNombre (){
+
+}
+}
+
+LA idea de angular es separar la parte back de la parte front. 
+una aplicacion esta compuesta por la parte back -> Node, y Front (aNgular --> html)
+
+
+/cli .> command line interfaz  
+podemos crear componetnes servicios, y funciones desde la terminal. Esto se va crear con la estrcutura minima.  
+
+--------
+express nombreCArpeta --hbs (node)
+
+
+ng new proyecto0 
+
+Angular routing ; Y
+
+
+-----
+PARA ACTUALIZA RLA VERSION DE NODE 
+>npm cache clean -f
+>npm install -g n
+
+instalamos de nuevo node js
+
+npm install -g @angular/cli
+ng new proyecto01 -> lo creamos dentor de la carpeta que queramos 
+
+node mogulos -> son las app que necesita para funkar
+
+src -> app -> tenemos 6 archivos app component html -> se va cmostar la parte visual. 
+adentro vemos los cmostachool  
+entramos en -> app.component.ts 
+
+en export class Appcomponent {
+creamos las varibales y la fuincione s
+
+title = "primer proyecto en angular" 
+} 
+
+ANGULAR TRABAJA DE ESTA FORMA->
+calendario 
+login
+navap 
+registro 
+todo lo que quieras modularizar creamos un componente por cada uno, hacemos un navap, y lo crea en todas las paginas. 
+ un componenete es un modulo, donde tiene archivos de funciones --- en agular dentro de  la carpeta app , nos crea el app.commmmmm... es el componenet principal
+
+
+Los componenetes que vamos a usar.  
+-> componnteny css...un archivo css, promedio tiene 2mil o 3mil lineas 
+los ompoenetes estan aisaldos entre si (etiquetas ) que creamos al principio para q no se pisen las clases. 
+cada css es propioo del componente.  Nos permite modularizar, no interactua con otro. es privado. 
+componente html 
+
+->component ts
+-> compnente spec.ts .> lo vamos a usar por el tema del rendimiento es la parte de testing.  ESTE LO BORRAMOS 
+
+}
+
+
+-------
+ng serve -o --> este corre el pogroama  
+
+Las app de node ya ngular corren en puertos disintos  
+-> Angular corre en localhost:4200
+-> Node corre en localhost:3000
+
+
+LA compilacion converiet el ps en js para que ejecute.  
+
+Tenemos dos partes
+Testing -> ng serve -o
+a produccion -> crea (dist imagnes, cdd, javascript)  
+
+
+
+
+
+
+dentor de la carptea creamos -> ng new proyecto01
+npm install (dentor de la carpeta)
+ng serve -o
+
+
+
+.ts -> funciones variables
+.html -> visual 
+
+
+LA INFORMAICON PASA DE COMPONE.TS A LA VISTA DE HTML, Y TABNIEN LA INFORMACION PUYEDE PASAR DE HTML A .TS  
+
+
+
+appcomponete.ts es la párte funcional, 
+appcompennt.css son propios de cada cmponenete
+comomd.html es la parte que el cliente ve, donde los datos son de otras plantillas. et. 
+ 
+
+-------
+src 
+
+	app -> 
+	app.component.css -> los estilos del componente. 
+	app.component.html -> vista
+	app.component.ts -> logica
+	app.component.spec.ts -> borrar  
+	app.routing.module.ts -> rutas
+	app.modulo.ts -> importacion de: modulos, servicios, componentes. 
+
+   index.html -> es el archivo final de pasar por app.component.html  
+
+------------
+EVENTOS EN ANGULAR
+
+-----------
+
+1ro. si voy  a usar formularios voy a app.module.ts
+import { FormsModule } from '@angular/forms';
+
+@NgModule({
+  // aqui accedo, y lo publico aca, apartte de importarlos arriba. hago publico para nuestrso ccomponentens y lo usemos en ellos. 
+  declarations: [
+    AppComponent
+    // LoginComopnenet 
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule
+    FormsModule
+    
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+
+
+en app.component.html
+<input type="text " [ngMode1]="nombre_usuario" name="nombre">
+ -> solo conoce y hace la realcion de ts a html.  
+
+
+<input type="text " [(ngMode1)]="apellido_usuario" name="apellido"> -> esto da a conocer una direccion bidimensional. de ts a html. y de html y a ts. 
+
+
+
+un componnete sirve para modularizar, eso lo creamos desde la terminal, donde lo crea y lo importa no ahorra varios.  
+lo cramos por ej asi-> ng g c navbar 
+-> ng generate component navbar 
+
+ng g c components/common/navbar 
+ng g c components/common/footer
+ng g c components/common/usuarios/login   
+
+
+
+
+-----------------------------
+12-06-19
+
+amgular cli/ 1 componente
+app-> 
+ap.com.ts
+
+Nosotros podemos crear componenentes, tranquilamente. 
+
+ng g c components/navbar 
+app.module.ts -> importaba el componente que descargamos 
+
+
+--despues de descargar recursos 
+npm install 
+
+
+
+4 coponetens
+home  -> exp´licar para que sirve este sitio comercializamos juguetes . 
+personajes -> ver todos los heroes con su descripcion
+personaje -> ver cada heroe individualmente
+navbar -> bscar todos los links
+footer -> ,aít
+
+ng g c components/home --spec false
+ng g c components/personajes --
+ng g c components/personaje 
+ng g c components/navbar 
+ng g c components/footer  
+
+
+Publico: 
+assets/css
+assets/img
+assets/jts 
+
+
+Dentro de assets/img -> vamos a pegar las imagenes 
+
+
+--------CREAR ANGULAR NODE 
+cd desktop
+npm install -g @angular/cli
+ng new proyecto2
+cd new proyecto2
+ng g c components/home
+ng g c components/personajes
+ng g c components/personaje
+ng g c components/navbar 
+
+
+ng serve -o -> compilado  
+
+
+
+--------------
+aap.component.html 
+y voy aborrar todo 
+menos el roter outlyler 
+
+
+
+---------------
+copmponentes | app.components.html -< gracas a orouter outletl | index.html -> esta todo lo que esta en app.component 
+
+------boostrart se pone en el index 
+
+------ctrl + C cuando se corta compilado 
+
+--------------------
+
+app.js .> archivo de rutas
+-> endpoint 
+
+cuando solicita una ruta el cliente -> llamar a un componente. 
+----------
+ng new proyecti02
+add angular routing y/n 
+Esto tiene que ver con .> app-routing,modules.ts
+s const routes: Routes = []; 

@@ -1,0 +1,57 @@
+<!-- El evento blur se ejecuta /dispara cuando un elemento pierde el foco.
+
+document.getElementID("Usuario").addEventListener("blur", comprobarUsuario)
+
+
+
+<input type="text" id="usuario">
+
+Codear 3 funciones que sae ejecutan cuando los input 
+usuario
+mail
+dni
+pierden el foco 
+SI(IF) ,,,usuario, mail o dni tienen menos de 3 caracteres (lenght) que s eponen en rojo
+//para cambair cualquier estilo CSS primeor debo acceder al elemento. 
+//value o lenght  o style
+document.getElementById -->
+
+<HTML>
+
+    <head>
+
+
+    </head>
+
+    <body>
+        <script>
+            addEventListener("load", principal);
+
+            function principal(){
+                document.getElementById("mail").addEventListener("blur", comprobarMail); 
+                document.getElementById("nombre").addEventListener("blur", comprobarNombre); 
+                document.getElementById("dni").addEventListener("blur", comprobarDni); 
+
+            }
+
+            function comprobarMail (){
+                var cantidadMail = document.getElementById("mail").value.lenght;
+                if(cantidadMail < 3 ){
+                    document.getElementById("mail").style.border = "2px solid tomato"
+                } else {
+                    // pongo en verde
+                    document.getElementById("mail").style.border
+                }
+            }
+
+            
+            
+            
+            
+            
+            
+            </script>
+        
+
+    </body>
+</HTML>

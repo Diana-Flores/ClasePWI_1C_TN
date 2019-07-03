@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+
+</head>
+<body>
+        <input type="text" id="texto1">
+        <span id="restantes">250</span> 
+<select id="comidas">
+    <option value="papitas con papas">Papas</option>
+    <option value"birrita"> LÑA mejor birra de todas</option>
+    <option value"hamburguesa"> Hamd:::</option>
+
+</select>
+
+    <input type="text" id="comida_preferida"> 
+    <input type="text" id="usuario">
+
+    <script>
+    // Evento : keydown keyup 
+    //  Almacenamos la cantidad de caracteres que tienen input y se la restamos a 250 
+addEventListener("load" , comenzar);
+// load -> es el evento al que quiero estar atento
+// comenzar -> es la funcion que se va disparar cuando se ejecuta !load!
+// addEventListener ->  estaba a la escucha de deteminamos momentos
+// EVENTOS JAVASCRIPT :  click, blur, focus , dclick, load , keydown, muosemove(cuando quiero cambiar el color)
+        function comenzar ( ){
+            // load lo veo como una clase, que va a disparar cada ves que alguien se posicione arriba de x
+            // en este punto solemos colocar todos los disparadores de eventos. 
+            // getElementById -> crea una referencia del elemento al que accedemos. Ej: value, lenght. etc. 
+            document.getElementById("texto1" ).addEventListener("keyup", contarCaracteres); 
+            // siempre qu agrego un listener, tengo que tener un evento como "texto1" y la funcion que se ejecuta cuando disparar ese evento. 
+            document.getElementById("comidas" ).addEventListener("change", contarCaracteres); 
+            // change -> disparar la funcion papitas cuando hay una neuva sleeccion en el select cuando el valor del select cambia. 
+
+            function papitas(){
+               alert( document.getElementById("comidas").value); 
+            //    la funcion de arriba nos va dar una alerta cuando cambie el valor deposicion de select. 
+            //  la funcion select me va abirir un monton de posibilidades, como una columna. 
+                    // VOY A PONER DENTRO DEL INPUT CON ID comida_elegida : el valor que fue seleccionado del select con id comidas. 
+                    var contenido_nuevo =  document.getElementById("comidas").value; 
+
+                    document.getElementById( "comida_elegida").value = contenido_nuevo; 
+            }
+        
+        
+        
+        
+        }
+        function contarCaracteres () {
+                var caracteres = document.getElementById("texto1").value.length
+                // value agarra lo que ahi adentro si ingreso por consola, me devuelve enm string. el mismo. 
+                // una vez obtenida la referencia del elemento accedo a su valor con la propiedad value, ya  la cantidad de caracteres con la propiedad length. 
+                // parseInt() -> me convierte un string a entero, poor ej si ya sabes que te van a pasar numeros por consola, aplicas este para convertirlo a Int.
+
+                var disponibles = 250 - caracteres; 
+                if(disponibles > 0 ){
+                // innerHTML .> es una propuedad que se desprende d ela referencia a un elemento html y modifica u obtiene el valor que ahi adentro. 
+                // lo mismo que de arriba, pisa el valor que tiene el html, seria un contador tipo x-. 
+                document.getElementById("restantes").innerHTML = disponibles;
+                } else{
+                    alert("Alto ahi LOCA"); 
+                }
+        }
+        <input type="text" id="comida_elegida" placeholder="tu comida favorita es...">
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+CD -> MOVERNOS change directory 
+LS -> LISTAR
+EN GITHUB
+CD DESKTOP
+CD PWI_1C_TN/
+
+
+EL MASTER ES LA RAMA PRINCIPAL DE TRABAJO, LA CLONACION S EHACE UNA VEZ, Y USAMOS OTRO COMANDO QUE ES PULL
+
+git pull
+
+con "clear" se te limpia la pantalla. 
+
+
+
+------------
+1ro tener una pagina html
+2do tener una pagina CSS que es una hoja de estilo
+3ro 
+
+siempre que tengo un elem contenido de otro, se llama padding, puedo   modificar a mi antojo el paddgin. 
+
+padding-top: 40px;
+PADDING-LEFT:
+PADDING-RIGHT:
+ CONTROL SHIR R ACTUALIZA EL NAVEGADOR
+CONTROL F5 
+
+EL PADDING ES INTERNO. 
+------------
+MARSHIN APLICA A ELEMENTOS EXTERNOS,  MARSIN
+
+
+AHI UN MARSIN TOP O BUTOON. LEFT Y RITGH 
+
+

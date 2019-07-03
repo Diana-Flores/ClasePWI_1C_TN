@@ -1,0 +1,100 @@
+express pelukeriah --hbs
+cd pelukeriah
+npm install 
+
+npm install --save mysql 
+npm install --save md5
+
+
+
+HOY COMENZAMOS CON BASE DE DATOS:
+
+En sql, tenemos la shell, a modo conceptual lo que queremos "siempre que exista una conexion a una base de datos" :
+1ro. Nos tenemos que conectar a mysql (msql -u root -p)
+2. Conectarnos a la base de datos que queremos
+
+
+msql -u root -p
+
+show databases 
+use peluqueria 
+
+
+en buscador node 
+express peluqueria --hbs 
+npm install 
+
+--vamos a crear dos paquetitos
+npm install --save mysql  --> para hacer coneccion a la base de datos, lo vamos a hacer de node js. ya no 
+npm install --save md5
+
+
+
+app js es la parte donde modificamos las rutas. 
+router es la parte logica
+viwes aes la parte visual
+
+
+1ro creamos las siguientyes rutas: 
+/registro
+/panel
+/login
+
+Tenems el localhost:3000
+/En la ruta por defecto hacemos un  menu que nos lleve a todas las rutas. 
+
+
+
+
+---
+CUANDO QUERAMOS COMPILAR HAGO, con "nodemon npm start" 
+
+
+---
+en sql
+voy a xamp
+
+---------------TAREA
+
+
+
+----------login .js
+
+var express = require('express');
+var router = express.Router();
+var md5 = require('md5'); 
+var uuid = require('uuid'); 
+
+router.get('/', function(req, res, next) {
+    res.render("login", {title:"Bienvenido"); 
+});
+
+
+----------------login.hbs
+<div class="ontainer">
+
+<div class ="row">
+<div class = "col">
+<h1 class="text-center"> {{title}} </h1>
+
+<form method="post" action=""/login/usuario">
+<input name="usuario" type ="text"
+class ="from-control"
+placeholder="usuario">
+
+<input name=""password" type="password"
+class= "from-control mt-4" 
+placeholder= "*****">
+
+<button type="submit" class="btn-btn-primary"> Ingrese</button> 
+</form>
+{{mensaje}}
+</div>
+</div>
+</div>
+
+----------------appjs
+var login =  require('./routes/login');
+app.use('/login', login);
+
+
